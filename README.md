@@ -1,12 +1,27 @@
-# React + Vite
+# User Management Dashboard (Live Demo)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://user-management-dashboard-berly.vercel.app/)  
+*A React frontend for managing user data with mock API (JSONPlaceholder).*
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- **CRUD Operations**: View, edit, and delete users in a responsive table.
+- **Form Validation**: Modal with error handling for edits.
+- **Mock API**: Uses [JSONPlaceholder](https://jsonplaceholder.typicode.com) (changes aren’t persisted).
 
-## Expanding the ESLint configuration
+## Tech Stack
+- ⚛️ React (Vite)  
+- 🔄 Axios for API calls  
+- 🎨 DaisyUI/TailwindCSS for styling  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How It Works
+1. Fetches user data on page load.
+2. Edit/delete actions trigger API calls (simulated).
+3. Form validation prevents invalid submissions.
+
+## For Developers (Optional)
+To run locally:
+```bash
+git clone https://github.com/mdjavid12/User-Management_Dashboard.git
+pnpm install
+pnpm dev
